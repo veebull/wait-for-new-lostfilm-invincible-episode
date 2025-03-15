@@ -85,8 +85,8 @@ async fn main() -> Result<(), Box<dyn Error>> {
             println!("Could not find the specified table. Check if the selector is correct.");
         }
         
-        // Wait 5 seconds before checking again
-        thread::sleep(Duration::from_secs(5));
+        // Wait 10 seconds before checking again
+        thread::sleep(Duration::from_secs(10));
     }
     
     println!("Finished checking for new episodes.");
